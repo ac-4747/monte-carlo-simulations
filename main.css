@@ -734,10 +734,11 @@ button,
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  background-color: #1cb495;
+
+  background-color: #ffffff;        /* white background */
+  color: #000000 !important;        /* black text */
+  border: 2px solid #000000;        /* add black border */
   border-radius: 6px;
-  border: 0;
-  color: #ffffff !important;
   cursor: pointer;
   display: inline-block;
   font-weight: 700;
@@ -746,36 +747,50 @@ button,
   padding: 0 1.125em;
   text-align: center;
   text-decoration: none;
-  white-space: nowrap; }
-  input[type="submit"]:hover,
-  input[type="reset"]:hover,
-  input[type="button"]:hover,
-  button:hover,
-  .button:hover {
-    background-color: #1fcaa7; }
-  input[type="submit"]:active,
-  input[type="reset"]:active,
-  input[type="button"]:active,
-  button:active,
-  .button:active {
-    background-color: #199e83; }
-  input[type="submit"].disabled, input[type="submit"]:disabled,
-  input[type="reset"].disabled,
-  input[type="reset"]:disabled,
-  input[type="button"].disabled,
-  input[type="button"]:disabled,
-  button.disabled,
-  button:disabled,
-  .button.disabled,
-  .button:disabled {
-    opacity: 0.5; }
-  @media screen and (max-width: 480px) {
-    input[type="submit"],
-    input[type="reset"],
-    input[type="button"],
-    button,
-    .button {
-      padding: 0; } }
+  white-space: nowrap;
+}
+
+/* Hover: invert colors */
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+button:hover,
+.button:hover {
+  background-color: #000000;        /* black background */
+  color: #ffffff !important;        /* white text */
+}
+
+/* Active (pressed) state – optional darker shade */
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active,
+button:active,
+.button:active {
+  background-color: #222222;
+  color: #ffffff !important;
+}
+
+/* Disabled state */
+input[type="submit"].disabled, input[type="submit"]:disabled,
+input[type="reset"].disabled, input[type="reset"]:disabled,
+input[type="button"].disabled, input[type="button"]:disabled,
+button.disabled, button:disabled,
+.button.disabled, .button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Mobile adjustment */
+@media screen and (max-width: 480px) {
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"],
+  button,
+  .button {
+    padding: 0;
+  }
+}
+
 
 /* Header */
 #header h1 {
@@ -887,26 +902,8 @@ button,
       margin: 1em 0 0 0;
       position: relative; } }
 
-.d-btn {
-  background-color: white;       /* default white background */
-  color: black;                  /* default black text */
-  padding: 6px 12px;             /* smaller button size */
-  border: 2px solid black;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  display: inline-block;
-  margin: 4px;
-  width: auto;                   /* prevent full-width stretch */
-  min-width: 120px;              /* optional: define consistent width */
-  text-align: center;            /* keep text centered */
-}
 
-.d-btn:hover {
-  background-color: black;       /* invert background */
-  color: white;                  /* invert text */
-}
+
 
 
 
