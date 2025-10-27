@@ -888,16 +888,21 @@ button,
       position: relative; } }
 
 .d-btn {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
+  background-color: white;       /* white background */
+  color: black;                  /* black text */
+  padding: 6px 14px;             /* smaller size */
+  border-radius: 6px;
   text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s;
+  font-weight: 600;
+  border: 2px solid black;       /* defined border for contrast */
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin: 4px;
 }
 
 .d-btn:hover {
-  background-color: #0056b3;
+  background-color: black;       /* invert colors */
+  color: white;
 }
+
 
