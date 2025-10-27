@@ -720,7 +720,7 @@ input[type="radio"] + label:before {
   color: rgba(255, 255, 255, 0.5) !important;
   opacity: 1.0; }
 
-/* Button */
+
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
@@ -742,13 +742,9 @@ button,
   cursor: pointer;
   display: inline-block;
   font-weight: 700;
-
- height: 2.75em;           
-  line-height: 2em;          /* match height */
-  padding: 0  1.125em;         /* less horizontal space */
-  font-size: 0.9em;          /* slightly smaller text */
-
-	
+  height: 2.75em;
+  line-height: 2.75em;
+  padding: 0 1.125em;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
@@ -794,6 +790,7 @@ button.disabled, button:disabled,
     padding: 0;
   }
 }
+
 
 
 /* Header */
@@ -905,6 +902,7 @@ button.disabled, button:disabled,
       left: auto;
       margin: 1em 0 0 0;
       position: relative; } }
+
 
 
 
