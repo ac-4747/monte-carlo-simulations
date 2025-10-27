@@ -42,7 +42,7 @@
 						},
 
 					// Delay.
-						delay: 6000
+						delay: 9000
 
 				};
 
@@ -100,7 +100,7 @@
 				}, settings.delay);
 
 		})();
-
+	
 	// Signup Form.
 		(function() {
 
@@ -170,3 +170,4 @@
 
 
 })();
+
