@@ -888,21 +888,26 @@ button,
       position: relative; } }
 
 .d-btn {
-  background-color: white;       /* white background */
-  color: black;                  /* black text */
-  padding: 6px 14px;             /* smaller size */
+  background-color: white;       /* default white background */
+  color: black;                  /* default black text */
+  padding: 6px 12px;             /* smaller button size */
+  border: 2px solid black;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
-  border: 2px solid black;       /* defined border for contrast */
   transition: all 0.3s ease;
   display: inline-block;
   margin: 4px;
+  width: auto;                   /* prevent full-width stretch */
+  min-width: 120px;              /* optional: define consistent width */
+  text-align: center;            /* keep text centered */
 }
 
 .d-btn:hover {
-  background-color: black;       /* invert colors */
-  color: white;
+  background-color: black;       /* invert background */
+  color: white;                  /* invert text */
 }
+
+
 
 
