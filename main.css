@@ -904,6 +904,47 @@ button.disabled, button:disabled,
       position: relative; } }
 
 
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* The image itself */
+.expand-img {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Scale up when hovering */
+.expand-img:hover {
+    transform: scale(1.15);
+}
+
+/* The text that appears */
+.hover-text {
+    position: absolute;
+    left: 220px;      /* pushes the text to the right of the image */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 14px;
+    border-radius: 6px;
+    opacity: 0;       /* hidden initially */
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+}
+
+/* When hovering on the container, show the text */
+.image-container:hover .hover-text {
+    opacity: 1;
+}
+
+
+
 
 
 
